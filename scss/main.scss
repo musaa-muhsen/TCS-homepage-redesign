@@ -1,0 +1,33 @@
+@import "_var";
+
+
+*, *:before, *:after{
+    //outline: 1px solid red;git s
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+   font-family: arial;
+   font-weight: 400;
+   font-style: normal;
+   background: var(--offWhite);
+}
+li {
+    list-style: none !important;
+}
+a {
+    text-decoration: none !important;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@import "_structure";
+@import "_nav";
+@import "_landing";
+@import "_slider";
+@import "_footer";

@@ -1,0 +1,15 @@
+:root {
+   // --fontMon: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
+   // --fontSerif: 'IBM Plex Serif', serif;
+    --white: #ffffff;
+    --black: #000;
+    --greyLight: #EBEBEB;
+    --greyMed: #707070;
+    --greyDark: #212121;
+  }
+
+  @mixin mobile {
+    @media all and (max-width: 601px)  {
+         @content;
+    }
+  }
