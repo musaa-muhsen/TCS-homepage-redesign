@@ -47,10 +47,11 @@
             text-transform: capitalize;
             cursor: pointer;
             width: 100%;
+            transition: background-color 0.3s ease-in-out;
             &:hover {
 
        // background: rgba(#232323, 0.8);
-        background: var(--tscBlue);;  
+        background-color: var(--tscBlue);;  
             }
         }
     }

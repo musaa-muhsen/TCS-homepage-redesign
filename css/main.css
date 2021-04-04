@@ -3,7 +3,7 @@
   --black: #000;
   --offBlack: #232323;
   --greyLight: #EBEBEB;
-  --greyMed: #707070;
+  --greyMed-1: #707070;
   --greyDark: #212121;
   --tscBlue: #0e8ff9;
 }
@@ -39,7 +39,7 @@ img {
 
 .main-container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1300px;
   width: 100%;
   height: auto;
   display: -ms-grid;
@@ -62,12 +62,14 @@ img {
 }
 
 .block-2-whole-wrapper {
+  margin-top: 30px;
+  margin-bottom: 300px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 60px;
-          column-gap: 60px;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
 }
 
 .block-2-whole-wrapper .column-1, .block-2-whole-wrapper .column-2 {
@@ -95,6 +97,7 @@ img {
   font-size: 16px;
   text-align: left;
   width: 250px;
+  padding-left: 20px;
 }
 
 .block-2-whole-wrapper .column-1 a.card-block-2:hover, .block-2-whole-wrapper .column-2 a.card-block-2:hover {
@@ -107,6 +110,8 @@ img {
 }
 
 .block-2-whole-wrapper .column-1 a.card-block-2 .image-container img, .block-2-whole-wrapper .column-2 a.card-block-2 .image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -116,11 +121,12 @@ a.card-block-2:hover img {
           transform: scale(1.05);
 }
 
-.section-title-container div {
-  margin: 0 auto;
+.section-title-container h1 {
+  font-weight: 600;
 }
 
 .block-4-whole-wrapper {
+  margin-top: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -159,7 +165,7 @@ a.card-block-2:hover img {
   --black: #000;
   --offBlack: #232323;
   --greyLight: #EBEBEB;
-  --greyMed: #707070;
+  --greyMed-1: #707070;
   --greyDark: #212121;
   --tscBlue: #0e8ff9;
 }
@@ -219,10 +225,12 @@ a.card-block-2:hover img {
   text-transform: capitalize;
   cursor: pointer;
   width: 100%;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .container-nav-wrapper .menu-desktop .contact-us-btn:hover {
-  background: var(--tscBlue);
+  background-color: var(--tscBlue);
 }
 
 .search__container {
