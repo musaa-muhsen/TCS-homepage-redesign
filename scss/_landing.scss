@@ -1,11 +1,74 @@
-.hero-container {
-    background-image: url("/images/image-landscape.jpg");
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 100px;
-    margin-top: 50px;
+// .hero-container {
+//     background-image: url("/images/image-landscape.jpg");
+//     background-color: #cccccc;
+//     height: 500px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+//     margin-bottom: 100px;
+//     margin-top: 50px;
+// }
+.landing-main {
+    height: auto;
+    background: var(--grey-4);
+    width: 100%;
+}
+
+.landing-block-1 {
+    h1 {
+font-size: 48px;
+font-weight: 600;
+    }
+
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 1000px;
+    ul {
+margin-top: 20px;
+        //outline: red solid 1px;
+        width: 230px;
+        li {
+            margin-bottom: 17px;
+            a {
+                text-transform: capitalize;
+                font-size: 1rem;
+                position:relative;
+               
+               // text-align:center;
+                @media all and (max-width: 700px) {
+                    font-size: 1rem;
+                }
+            
+               // border-bottom: 2px solid var(--black);
+               // border-bottom: 3px solid var(--black);
+                //display: inline-block;
+                img {
+                    display: inline-block;
+                }
+            }
+            a::after {
+                content:'';
+                position:absolute;
+                width:100%;
+                height:5px;
+                background-color: #e5ecf4;
+                transition: background-color 0.3s ease-in-out;
+                bottom:-5px;
+                left:0;
+                right:0;
+                margin:auto;
+                @media all and (max-width: 700px) {
+                    width:100px;
+                    bottom:-7px;
+                }
+            }
+        }
+    }
+   
+}
+
+
+.landing-block-1 ul li:hover ::after  {
+    background-color: #0e8ff9;
 }
