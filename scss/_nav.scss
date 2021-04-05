@@ -1,13 +1,14 @@
 @import "_var";
 
 .container-nav-wrapper {
-    background: #fff;
+  
     display: flex;
     justify-content: flex-end;
     .menu-desktop {
+        background: #fff;
         top: 50px;
         position: fixed;
-        padding-right:  30px;
+        padding: 10px 30px 10px 10px;
 
         .logo-container {
             margin-bottom: 70px;
@@ -18,7 +19,7 @@
         }
         .search-container {
             img {
-               fill: red !important;
+               //fill: red !important;
             }
         }
         .nav-links-container {
@@ -113,3 +114,12 @@ margin-bottom: 15px;
             background-position: 100% center;
         }
 
+.nav-menu-details {
+    top: 0;
+
+    display: none;
+    background-color: red;
+    height: 300px;
+    width: 66.66666%;
+    position: absolute;
+}

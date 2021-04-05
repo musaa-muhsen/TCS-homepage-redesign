@@ -44,15 +44,19 @@
             // margin-bottom: 10px;
             .accordion-item-header {
                 //border-top: 1px solid  var(--greyDark);
-               // border-bottom: 1px solid  var(--greyDark);
-                font-size: 1rem;
-                padding: 0.5rem 3rem 0.5rem 1rem;
+                border-bottom: 1px solid  var(--greyDark);
+                
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 600 !important;
+                padding: 0.5rem 1rem 0.5rem 1rem;
                 min-height: 3.5rem;
                 line-height: 1.25rem;
                 font-weight: normal;
                 display: flex;
                 align-items: center;
                 position: relative;
+
                 cursor: pointer;
                 @include mobile {
                     font-size: 0.8rem;
@@ -61,8 +65,8 @@
                 
                 &::after {
                     font-family:serif; 
-                    content: "\000BB";//get entity arrow here 
-                    font-size: 2rem; 
+                    content: "\003E";//get entity arrow here 
+                    font-size: 1.5rem; 
                     position: absolute;
                     right: 1rem;
                     top: 29%;
@@ -91,9 +95,12 @@
                 transition: max-height 0.2s ease-out;
                 border-bottom: 1px solid  var( --greyMed);
                 padding-left: 10px;
+                 ul {
+                     margin-top: 20px;
+                 }
             }
             .accordion-item-body-content {
-                
+               
                 font-size: 15px;
                 padding: 0 1rem 1rem 1rem;
                 //line-height: 1.5rem;
@@ -103,14 +110,17 @@
                 }
                 ul {
                     li {
-                        list-style:  circle inside none;
+                        a {
+                            color: var(--offBlack);
+                        }
+                        list-style:  circle inside none !important;
                         margin-bottom: 10px;
                         @include mobile {
                             list-style:  circle outside none;
                         }
                     }
                 }
-                //background: pink;
+                //
             }
     
         }

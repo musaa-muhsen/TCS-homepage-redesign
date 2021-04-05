@@ -59,7 +59,7 @@ accordionItemHeaders.forEach(function(accordionItemHeader){
 // this =  accordionItemHeader
 //accordionItemHeader.addEventListener("touchend", accordFunc );
     accordionItemHeader.addEventListener("click", accordFunc )
-    
+  
     function accordFunc(e){
         e.preventDefault;
         // if(e.type == 'touchend') {
@@ -88,3 +88,52 @@ accordionItemHeaders.forEach(function(accordionItemHeader){
     }
 
 });
+
+const navLink = document.querySelectorAll('.nav-link');
+const menu1 = document.querySelector('.nav-menu-details');
+//console.log(navLink)
+
+navLink.forEach(function(link) {
+  //console.log(link)
+  link.addEventListener("mouseover", showMenu);
+  link.addEventListener("mouseout", hideMenu);
+})
+
+function showMenu(e) {
+  //console.log(e);
+  console.log(e.target.className);
+  if (e.target.className === "nav-link link-1") {
+    menu1.style.display = "block";
+
+   }
+}
+
+function hideMenu(e) {
+  //console.log(e);
+  console.log(e.target.className);
+  if (e.target.className === "nav-link link-1") {
+    menu1.style.display = "none";
+   }
+}
+
+
+  // console.log(link.className)
+  // if (link.className === "nav-link link-1") {
+  //   button = link.className
+  // }
+// if (navLink === ) {
+
+// }
+/*
+navLink.addEventListener("mouseover", displayIndustries);
+//navLink.addEventListener("click", mySecondFunction);
+navLink.addEventListener("mouseout", hideInd);
+
+function myFunction() {
+  console.log('mouseover');
+}
+
+function mySecondFunction() {
+  console.log('click');
+}
+*/

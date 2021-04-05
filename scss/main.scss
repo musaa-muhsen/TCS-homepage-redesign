@@ -24,6 +24,9 @@ li {
 a {
     text-decoration: none !important;
 }
+a:visited {
+    color: var(--offBlack);
+  }
 img {
     display: block;
     max-width: 100%;
