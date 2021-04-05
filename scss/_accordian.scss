@@ -36,7 +36,9 @@
         margin: 30px auto;
         @include mobile {
             width: 95%;
+            margin: 10px auto;
         }
+        
         .accordion-item {
            // background: var(--greyLight);
             //outline: var(--black) solid 1px;

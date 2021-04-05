@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
@@ -53,12 +55,64 @@
         </div> 
       
   </header>
+  <div class="hero-container">
+    <div>
+      <h2>It all starts here</h2>
+      <h1>Building on Belief</h1>
+      <button>Learn more</button>
+    </div>
+
+
+
+  </div>
+   <!-- Slider main container -->
+   <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper2-slide-1">
+            <div class="overlay3">
+                <h2>On a personal level I must say how impressed I have been with the level of care and attention provided by Wyncourt staff to your residents. You and your team are proactive and knowledgeable.</h2>
+                <h3>Local GP</h3>
+            </div>
+        </div>
+        <div class="swiper-slide swiper2-slide-3">
+            <div class="overlay3">
+                <h2>Wyncourt has been some of the happiest years she has ever known.</h2>
+                <h3>Relative</h3>
+            </div>
+        </div>
+       
+   
+        <div class="swiper-slide swiper2-slide-4">
+            <div class="overlay3">
+                <h2>I was surprised how good it was [the home]. If you have to go in anywhere, I don’t think you could do better. I’ve dreaded it all my life but it really is good.</h2>
+                <h3>Resident</h3>
+            </div>
+        </div>
+   
+        <div class="swiper-slide swiper2-slide-5">
+            <div class="overlay3">
+                <h2>If you walk around you will hear a lot of laughing, I’ve been looked after marvellously, the food is excellent.</h2>
+                <h3>Resident</h3>
+            </div>
+        </div>
+
+        
+
+    </div>
+<!-- <div class="page-container"> -->
+<div class="swiper-pagination page-2"></div>
+<!-- </div> -->
+    
+
+    </div>
  
     <div class="main-container">
    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@ block-main-1 is the main left section @@@@@@@@@@@@@@@@@@@@-->     
        <!-- <section class="container-content-wrapper"> -->
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@ block-1-whole-wrapper: landing @@@@@@@@@@@@@@@@@@@@-->     
-    
+    <div class="block-1-whole-wrapper"></div>
 
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@ block-2-whole-wrapper: first link part @@@@@@@@@@@@@@@@@@@@-->     
   
@@ -132,7 +186,7 @@
         
             </a>
            <a class="square-3 shape-2">
-             <div>
+             <div class="make-left">
                 <div>
               <p>solution</p>
               <h2>Lending and Securitisation Reinvented with TCS </h2>
@@ -140,6 +194,7 @@
             </div>
        
             </a>
+
       </div>
       <div class="column-2">
         <a class="square-3 shape-3">
@@ -482,7 +537,8 @@
 </div>
   </div>
     </footer>
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
     <script src="app.js"></script>
 </body>
 </html>

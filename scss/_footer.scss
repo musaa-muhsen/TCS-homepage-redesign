@@ -1,7 +1,8 @@
 @import "_var";
 
 footer {
-    background: #f2f2f2;
+    //background: #f2f2f2;
+   background: var(--grey-4);
     width: 100%;
     .footer-wrapper-desktop {
         display: block;
@@ -12,6 +13,7 @@ footer {
         width: 80%;
         padding: 50px 0;
         margin: 0 auto;
+       
     
         
         display: grid;
@@ -53,7 +55,7 @@ footer {
 .footer-wrapper-mobile {
     display: none;
     @media all and (max-width: 1000px) {
-        padding: 30px 0;
+        padding: 10px 0;
         display: block;
     }
 }
@@ -83,6 +85,9 @@ footer {
 fill: rgba( #000000,0.7);
 //fill: var(--tscBlue)
 
+}
+.faq-main-container {
+    margin-top: 0 !important;
 }
 
 //3 glass select2 egg 2 water , 2 big spoon flour, 2 big 

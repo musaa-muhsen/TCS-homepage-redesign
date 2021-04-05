@@ -24,7 +24,6 @@ body {
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
 
 li {
@@ -64,6 +63,12 @@ img {
   height: auto;
 }
 
+@media only screen and (max-width: 1000px) {
+  .main-container {
+    width: 98%;
+  }
+}
+
 .section-title-container h1 {
   font-size: 48px;
   font-weight: 600;
@@ -82,6 +87,12 @@ img {
   margin-bottom: 300px;
 }
 
+@media all and (max-width: 601px) {
+  .block-2-whole-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
 .block-2-whole-wrapper .block-2-container {
   display: -ms-grid;
   display: grid;
@@ -89,6 +100,13 @@ img {
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 6%;
           column-gap: 6%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .block-2-whole-wrapper .block-2-container {
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
+  }
 }
 
 .block-2-whole-wrapper .block-2-container .column-1, .block-2-whole-wrapper .block-2-container .column-2 {
@@ -113,9 +131,11 @@ img {
   padding-left: 20px;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 600px) {
   .block-2-whole-wrapper .block-2-container a.card-block-2 .link-title-container {
-    width: 200px;
+    padding-left: 0px;
+    width: 140px;
+    font-size: 15px;
   }
 }
 
@@ -132,6 +152,12 @@ img {
   text-transform: capitalize;
   font-size: 16px;
   margin-top: 8px;
+}
+
+@media all and (max-width: 601px) {
+  .block-2-whole-wrapper .block-2-container a.card-block-2 .link-title-container .know-more {
+    font-size: 14px;
+  }
 }
 
 .block-2-whole-wrapper .block-2-container a.card-block-2:hover {
@@ -165,6 +191,14 @@ a.card-block-2:hover img {
           column-gap: 6%;
 }
 
+@media only screen and (max-width: 600px) {
+  .block-3-whole-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+}
+
 .block-3-whole-wrapper .column-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +214,13 @@ a.card-block-2:hover img {
   position: relative;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+  height: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .block-3-whole-wrapper .square-3 {
+    height: 260px;
+  }
 }
 
 .block-3-whole-wrapper .square-3 div {
@@ -204,7 +245,6 @@ a.card-block-2:hover img {
 .block-3-whole-wrapper .shape-1 {
   width: 100%;
   background-color: #92cbff;
-  height: 400px;
   margin-bottom: 40px;
 }
 
@@ -212,21 +252,31 @@ a.card-block-2:hover img {
   background-color: rgba(146, 203, 255, 0.8);
 }
 
+@media only screen and (max-width: 600px) {
+  .block-3-whole-wrapper .shape-1 {
+    margin-bottom: 0px;
+  }
+}
+
 .block-3-whole-wrapper .shape-2 {
   color: #FFF;
   width: 100%;
   background-color: #08416F;
-  height: 400px;
 }
 
 .block-3-whole-wrapper .shape-2:hover {
   background-color: rgba(8, 65, 111, 0.8);
 }
 
+@media only screen and (max-width: 600px) {
+  .block-3-whole-wrapper .shape-2 {
+    margin: 20px 0;
+  }
+}
+
 .block-3-whole-wrapper .shape-3 {
   color: #FFF;
   background: var(--tscBlue);
-  height: 400px;
   width: 100%;
 }
 
@@ -236,7 +286,13 @@ a.card-block-2:hover img {
 
 .block-4-whole-wrapper {
   margin-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .block-4-whole-wrapper {
+    margin-bottom: 50px;
+  }
 }
 
 .block-4-whole-wrapper .block-4-container {
@@ -246,6 +302,13 @@ a.card-block-2:hover img {
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 6%;
           column-gap: 6%;
+}
+
+@media only screen and (max-width: 600px) {
+  .block-4-whole-wrapper .block-4-container {
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
+  }
 }
 
 .block-4-whole-wrapper .block-4-container .column-1, .block-4-whole-wrapper .block-4-container .column-2 {
@@ -296,9 +359,17 @@ a.card-block-2:hover img {
   margin-bottom: 12px;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1100px) {
   .block-4-whole-wrapper .block-4-container a.card-block-4 .link-title-container .link-title-main {
     width: 200px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .block-4-whole-wrapper .block-4-container a.card-block-4 .link-title-container .link-title-main {
+    width: 150px;
+    padding-left: 0px;
+    font-size: 15px;
   }
 }
 
@@ -310,6 +381,13 @@ a.card-block-2:hover img {
   text-transform: capitalize;
   font-size: 16px;
   padding-bottom: 15px;
+}
+
+@media all and (max-width: 600px) {
+  .block-4-whole-wrapper .block-4-container a.card-block-4 .link-title-container .know-more {
+    font-size: 14px;
+    padding-left: 0px;
+  }
 }
 
 a.card-block-4:hover img {
@@ -339,6 +417,7 @@ a.card-block-4:hover .know-more, a.card-block-2:hover .know-more {
 }
 
 nav.nav-wrapper {
+  overflow-x: hidden;
   padding: 10px 0;
   background-color: var(--black-3);
 }
@@ -500,10 +579,46 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
   background-position: 100% center;
 }
 
+.hero-container {
+  background-image: url("/images/image-landscape.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 1000px;
+  margin: 50px auto 50px auto;
+  position: relative;
+}
+
+.hero-container div {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.hero-container button {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 400;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+}
+
 .landing-main {
   height: auto;
   background: var(--grey-4);
   width: 100%;
+}
+
+@media all and (max-width: 1200px) {
+  .landing-main {
+    font-size: 30px;
+  }
 }
 
 .landing-block-1 {
@@ -515,6 +630,18 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
 .landing-block-1 h1 {
   font-size: 48px;
   font-weight: 600;
+}
+
+@media all and (max-width: 1200px) {
+  .landing-block-1 h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 1001px) {
+  .landing-block-1 {
+    width: 99%;
+  }
 }
 
 .landing-block-1 ul {
@@ -556,15 +683,162 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
   margin: auto;
 }
 
+.landing-block-1 ul li:hover ::after {
+  background-color: #0e8ff9;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --offBlack: #232323;
+  --greyLight: #EBEBEB;
+  --greyMed-1: #707070;
+  --greyDark: #212121;
+  --tscBlue: #0e8ff9;
+  --grey-4: #f7f9fa;
+  --black-3: #000f31;
+}
+
+.swiper-container {
+  cursor: pointer;
+  padding: 40px 0;
+  margin-bottom: 100px;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+.swiper-container .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  max-width: 100%;
+  width: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .overlay3 {
+  margin: 0 auto;
+  width: 300px;
+  text-align: left;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .overlay3 h2 {
+  position: relative;
+  font: italic normal 21px var(--fontSerif);
+}
+
 @media all and (max-width: 700px) {
-  .landing-block-1 ul li a::after {
-    width: 100px;
-    bottom: -7px;
+  .swiper-container .swiper-wrapper .swiper-slide .overlay3 h2 {
+    font: italic normal 20px var(--fontSerif);
   }
 }
 
-.landing-block-1 ul li:hover ::after {
-  background-color: #0e8ff9;
+.swiper-container .swiper-wrapper .swiper-slide .overlay3 h2::before {
+  content: "\201C";
+  font-weight: bold;
+  font-size: 50px;
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  color: var(--aqua);
+}
+
+@media all and (max-width: 700px) {
+  .swiper-container .swiper-wrapper .swiper-slide .overlay3 h2::before {
+    font-size: 35px;
+    top: -30px;
+    left: -20px;
+  }
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .overlay3 h2::after {
+  content: "\201E";
+  font-weight: bold;
+  font-size: 50px;
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  color: var(--aqua);
+}
+
+@media all and (max-width: 700px) {
+  .swiper-container .swiper-wrapper .swiper-slide .overlay3 h2::after {
+    font-size: 35px;
+    bottom: -20px;
+    right: -10px;
+  }
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .overlay3 h3 {
+  margin-top: 33px;
+  text-align: right;
+  margin-right: 30px;
+  text-transform: capitalize;
+}
+
+@media all and (max-width: 700px) {
+  .swiper-container .swiper-wrapper .swiper-slide .overlay3 h3 {
+    font-size: 18px;
+  }
+}
+
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+  position: relative;
+}
+
+.swiper-container .swiper-button-prev {
+  top: 0;
+  left: 3px !important;
+  background: pink;
+}
+
+.swiper-container .swiper-button-next {
+  top: 0;
+  right: 3px !important;
+  left: 90vw;
+  bottom: 20px;
+  background: pink;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid #000 2px;
+  background: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet:focus, .swiper-pagination-bullet-active:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.swiper-pagination {
+  width: 127px !important;
+  margin: 20px auto 0 auto;
+}
+
+@media all and (max-width: 700px) {
+  .swiper-pagination {
+    display: block;
+  }
 }
 
 :root {
@@ -630,6 +904,7 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
 @media all and (max-width: 601px) {
   .faq-main-container .accordion {
     width: 95%;
+    margin: 10px auto;
   }
 }
 
@@ -733,7 +1008,7 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
 }
 
 footer {
-  background: #f2f2f2;
+  background: var(--grey-4);
   width: 100%;
 }
 
@@ -794,7 +1069,7 @@ footer .footer-wrapper-desktop .footer-link-container ul li a:hover {
 
 @media all and (max-width: 1000px) {
   .footer-wrapper-mobile {
-    padding: 30px 0;
+    padding: 10px 0;
     display: block;
   }
 }
@@ -823,4 +1098,8 @@ footer .footer-wrapper-desktop .footer-link-container ul li a:hover {
 
 .icon:hover path {
   fill: rgba(0, 0, 0, 0.7);
+}
+
+.faq-main-container {
+  margin-top: 0 !important;
 }

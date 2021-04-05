@@ -138,3 +138,40 @@ function mySecondFunction() {
 }
 */
 //document.body.contentEditable = true;
+
+const mySwiper2 = new Swiper('.swiper-container', {
+  // Optional parameters
+   pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+   slidesPerView: 3,
+  loop: true,
+
+   autoplay: {
+      delay: 6000,
+      disableOnInteraction: false
+   },
+   allowTouchMove: true,
+  
+     // Navigation arrows
+breakpoints: {
+  // when window width is <= 499px
+  0: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 30
+  },
+  // when window width is <= 999px
+ 700: {
+      slidesPerView: 2,
+      spaceBetweenSlides: 90
+  },
+  1300: {
+    slidesPerView: 3,
+    spaceBetweenSlides: 100
+}
+
+}
+  // If we need pagination
+
+});

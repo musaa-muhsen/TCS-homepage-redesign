@@ -6,6 +6,9 @@
     max-width: 1000px;
     width: 100%;
     height: auto;
+    @media only screen and (max-width: 1000px) {
+            width: 98%;
+       }
 //    display: grid;
 //    grid-template-columns: repeat(3, 1fr);
 //    grid-template-rows: repeat(3, auto);
@@ -48,10 +51,16 @@
     //background-color: cadetblue;
     margin-top: 30px;
     margin-bottom: 300px;
+    @include mobile {
+        margin-bottom: 100px; 
+    }
     .block-2-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 6%;
+        @media only screen and (max-width: 1000px) {
+            column-gap: 3%;
+       }
         .column-1, .column-2 {
             margin:0 auto;
             //width: calc(100% - 70px);
@@ -76,9 +85,17 @@
                     padding: 20px 0;
                     width: 250px;
                     padding-left: 20px;
-                    @media all and (max-width: 1000px) {
-                        width: 200px;
+                    @media all and (max-width: 600px) {
+                        //width: 150px;
+                        padding-left: 0px;
+                        width: 140px;
+                        //outline: red solid 1px;
+                        font-size: 15px;
                     }
+                    @media all and (max-width: 1000px) {
+                        //width: 200px;
+                    }
+                    
                     p:nth-child(1) {
                         
                         line-height: 1.3;
@@ -92,12 +109,15 @@
                         }
                     }
                     .know-more {
-                        transition: all 0.3s ease-in-out;  
-                           
+                        transition: all 0.3s ease-in-out;     
                             color: var(--tscBlue);
                             text-transform: capitalize;
                             font-size: 16px;
                             margin-top: 8px;
+                            @include mobile {
+                                font-size: 14px;
+                            }
+                            
                           
                         }
                 }
@@ -126,6 +146,10 @@
 
 a.card-block-2:hover img {
     transform: scale(1.05);
+    @media all and (max-width: 600px) {
+        //width: 140px !important;
+   
+    }
 }
 
 
@@ -135,15 +159,28 @@ a.card-block-2:hover img {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     column-gap: 6%;
+    @media only screen and (max-width: 600px) {
+        grid-template-columns:  1fr;
+        margin-bottom: 50px;
+       }
      .column-2 {
          display: flex;
          align-items: center;
      }
     .square-3 {
+        
         cursor: pointer;
        display: block;
        position: relative;
        transition: background-color 0.3s ease-in-out;
+       height: 400px;
+       @media only screen and (max-width: 1000px) {
+        height: 260px;
+       }
+       @media only screen and (max-width: 600px) {
+        //height: 250px;
+        //border: 20px solid #fff;
+       }
       
        div {
           position: absolute;
@@ -160,6 +197,19 @@ a.card-block-2:hover img {
              }
           }
        }
+    //    @media only screen and (max-width: 600px) {
+    //     .make-left {
+        
+    //         right: 0;
+    //         div {
+    //             width: 200px;
+    //             outline: red solid 1px;
+                
+    //         }
+          
+    //        }
+    //    }
+       
     }
     .shape-1 {
         
@@ -167,10 +217,12 @@ a.card-block-2:hover img {
             background-color: rgba(#92cbff, 0.8);
         }
         width: 100%;
-       // background: #242B2E;
-       background-color: #92cbff;
-        height: 400px;
-        margin-bottom: 40px ;
+        // background: #242B2E;
+        background-color: #92cbff;
+        margin-bottom: 40px;
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 0px;
+           }
     }
     .shape-2{
         color: #FFF;
@@ -178,9 +230,10 @@ a.card-block-2:hover img {
             background-color: rgba(#08416F, 0.8);
         }
         width: 100%;
-        background-color:  #08416F;  
-        height: 400px;
-        
+        background-color:  #08416F; 
+        @media only screen and (max-width: 600px) {
+            margin: 20px 0;
+           } 
     }
     .shape-3 {
         color: #FFF;
@@ -189,7 +242,6 @@ a.card-block-2:hover img {
         }
         //outline: salmon solid 1px;
         background: var(--tscBlue);
-        height: 400px;
         width: 100%;
        // margin-bottom: 70px ;  
     }
@@ -201,13 +253,18 @@ a.card-block-2:hover img {
 .block-4-whole-wrapper {
       
     margin-top: 30px;
-    margin-bottom: 200px;
-  
+    margin-bottom: 100px;
+    @media only screen and (max-width: 600px) {
+        margin-bottom: 50px;
+   }
     .block-4-container {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 6%;
+        @media only screen and (max-width: 600px) {
+            column-gap: 3%;
+       }
     .column-1, .column-2 {
         margin:0 auto;
        // width: calc(100% - 70px);
@@ -264,11 +321,20 @@ a.card-block-2:hover img {
                     font-weight: 600;      
                     text-align: left;
                     width: 300px;
-                    @media all and (max-width: 1000px) {
+                    //outline: red solid 1px;
+                    @media all and (max-width: 1100px) {
                         width: 200px;
+                        // font-size: 15px;
+                        // padding-left: 10px;
+                    }
+                    @media all and (max-width: 600px) {
+                        width: 150px;
+                        padding-left: 0px;
+                        font-size: 15px;
                     }
                     padding-top: 20px;
                     margin-bottom: 12px;
+                   
                     
                 }
                .know-more {
@@ -278,6 +344,11 @@ a.card-block-2:hover img {
                     text-transform: capitalize;
                     font-size: 16px;
                     padding-bottom: 15px;
+                    @media all and (max-width: 600px) {
+                        //width: 150px;
+                        font-size: 14px;
+                        padding-left: 0px;
+                    }
                 }
             }
 

@@ -1,5 +1,6 @@
 @import "_var";
 nav.nav-wrapper {
+    overflow-x: hidden;
     padding: 10px 0;
     background-color: var(--black-3);
     .nav-container-main {

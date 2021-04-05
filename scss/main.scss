@@ -16,7 +16,7 @@ font-size: 16px;
    font-style: normal;
    //background: var(--offWhite);
    text-rendering: optimizeLegibility;
-   overflow-x: hidden;
+   //overflow-x: hidden;
 }
 li {
     list-style: none !important;
@@ -36,5 +36,6 @@ img {
 @import "_structure";
 @import "_nav";
 @import "_landing";
+@import "_slider";
 @import "_accordian";
 @import "_footer";
