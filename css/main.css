@@ -181,6 +181,7 @@ label:focus,
   line-height: 1.4;
   font-weight: 600;
   text-align: left;
+  color: var(--offBlack) !important;
 }
 
 .block-2-whole-wrapper .block-2-container a.card-block-2 .link-title-container .know-more {
