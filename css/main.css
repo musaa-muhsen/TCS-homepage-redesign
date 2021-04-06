@@ -888,8 +888,14 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
   position: absolute;
   top: 0;
   right: 30px;
-  font-size: 100px;
+  font-size: 80px;
   cursor: pointer;
+}
+
+@media all and (max-width: 601px) {
+  .overlay-links div p {
+    font-size: 60px;
+  }
 }
 
 .overlay-links div p:hover {
@@ -930,11 +936,23 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
   color: var(--tscBlue);
 }
 
+@media all and (max-width: 601px) {
+  .overlay-links div article div h3 {
+    font-size: 20px;
+  }
+}
+
 .overlay-links div article div ul li {
   color: var(--white);
   margin-bottom: 10px;
   cursor: pointer;
   font-size: 25px;
+}
+
+@media all and (max-width: 601px) {
+  .overlay-links div article div ul li {
+    font-size: 16px;
+  }
 }
 
 .overlay-links div article div ul li:hover {
