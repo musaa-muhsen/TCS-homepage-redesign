@@ -1,57 +1,3 @@
-// const items = document.querySelectorAll('.slider-item');
-// const itemCount = items.length;
-// const nextItem = document.querySelector('.next');
-// const previousItem = document.querySelector('.previous');
-// const navItem = document.querySelector('a.toggle-nav');
-// let count = 0;
-
-// function showNextItem() {
-//   items[count].classList.remove('active');
-
-//   if(count < itemCount - 1) {
-//     count++;
-//   } else {
-//     count = 0;
-//   }
-
-//   items[count].classList.add('active');
-//   console.log(count);
-// }
-
-// function showPreviousItem() {
-//   items[count].classList.remove('active');
-
-//   if(count > 0) {
-//     count--;
-//   } else {
-//     count = itemCount - 1;
-//   }
-
-//   items[count].classList.add('active');
-//   // Check if working...
-//   console.log(count);
-// }
-
-// function toggleNavigation(){
-//   this.nextElementSibling.classList.toggle('active');
-// }
-
-// function keyPress(e) {
-//   e = e || window.event;
-  
-//   if (e.keyCode == '37') {
-//     showPreviousItem();
-//   } else if (e.keyCode == '39') {
-//     showNextItem();
-//   }
-// }
-
-// nextItem.addEventListener('click', showNextItem);
-// previousItem.addEventListener('click', showPreviousItem);
-// document.addEventListener('keydown', keyPress);
-// navItem.addEventListener('click', toggleNavigation);
-
-
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
 // we want to loop through each accordionItemHeader VVV
@@ -89,55 +35,7 @@ accordionItemHeaders.forEach(function(accordionItemHeader){
 
 });
 
-const navLink = document.querySelectorAll('.nav-link');
-const menu1 = document.querySelector('.nav-menu-details');
-//console.log(navLink)
 
-navLink.forEach(function(link) {
-  //console.log(link)
-  link.addEventListener("mouseover", showMenu);
-  link.addEventListener("mouseout", hideMenu);
-})
-
-function showMenu(e) {
-  //console.log(e);
-  console.log(e.target.className);
-  if (e.target.className === "nav-link link-1") {
-    menu1.style.display = "block";
-
-   }
-}
-
-function hideMenu(e) {
-  //console.log(e);
-  console.log(e.target.className);
-  if (e.target.className === "nav-link link-1") {
-    menu1.style.display = "none";
-   }
-}
-
-
-  // console.log(link.className)
-  // if (link.className === "nav-link link-1") {
-  //   button = link.className
-  // }
-// if (navLink === ) {
-
-// }
-/*
-navLink.addEventListener("mouseover", displayIndustries);
-//navLink.addEventListener("click", mySecondFunction);
-navLink.addEventListener("mouseout", hideInd);
-
-function myFunction() {
-  console.log('mouseover');
-}
-
-function mySecondFunction() {
-  console.log('click');
-}
-*/
-//document.body.contentEditable = true;
 
 const mySwiper2 = new Swiper('.swiper-container', {
   // Optional parameters
@@ -149,7 +47,7 @@ const mySwiper2 = new Swiper('.swiper-container', {
   loop: true,
 
    autoplay: {
-      delay: 6000,
+      delay: 4000,
       disableOnInteraction: false
    },
    allowTouchMove: true,
@@ -175,3 +73,68 @@ breakpoints: {
   // If we need pagination
 
 });
+
+const navLinks = document.querySelectorAll('.nav-link');
+const overlay = document.querySelector('.overlay-links');
+
+navLinks.forEach(function(link) {
+  link.addEventListener("click", showMenu);
+});
+
+function showMenu(e) {
+  overlay.style.display = "block";
+}
+
+overlay.addEventListener('click', function (e) {
+  this.style.display = "none";
+})
+
+// const navLink = document.querySelectorAll('.nav-link');
+// const menu1 = document.querySelector('.nav-menu-details');
+// //console.log(navLink)
+
+// navLink.forEach(function(link) {
+//   //console.log(link)
+//   link.addEventListener("mouseover", showMenu);
+//   link.addEventListener("mouseout", hideMenu);
+// })
+
+// function showMenu(e) {
+//   //console.log(e);
+//   console.log(e.target.className);
+//   if (e.target.className === "nav-link link-1") {
+//     menu1.style.display = "block";
+
+//    }
+// }
+
+// function hideMenu(e) {
+//   //console.log(e);
+//   console.log(e.target.className);
+//   if (e.target.className === "nav-link link-1") {
+//     menu1.style.display = "none";
+//    }
+// }
+
+
+  // console.log(link.className)
+  // if (link.className === "nav-link link-1") {
+  //   button = link.className
+  // }
+// if (navLink === ) {
+
+// }
+/*
+navLink.addEventListener("mouseover", displayIndustries);
+//navLink.addEventListener("click", mySecondFunction);
+navLink.addEventListener("mouseout", hideInd);
+
+function myFunction() {
+  console.log('mouseover');
+}
+
+function mySecondFunction() {
+  console.log('click');
+}
+*/
+//document.body.contentEditable = true;

@@ -2,7 +2,7 @@
 
 .swiper-container {
   cursor: pointer;
-  padding: 40px 0;
+  padding: 20px 0 60px 0;
   margin-bottom: 100px;
 
   overflow: hidden;
@@ -13,8 +13,8 @@
   
   .swiper-wrapper {
      
-      display: flex;
-  align-items: center;
+      //display: flex;
+  //align-items: center;
   
       .swiper-slide {
           -webkit-transform: translate3d(0,0,0) !important;
@@ -22,56 +22,15 @@
          width: 100%;
          //background-color: #cacaca;
          .overlay3 {
-          margin: 0 auto;
+             margin: 0 auto;
              width: 300px;
              //padding: 30px;
              text-align: left;
              h2 {
-                 position: relative;
-                 font: italic normal 21px var(--fontSerif);
                  @media all and (max-width: 700px) {
-                  font: italic normal 20px var(--fontSerif);
-              }
+                  }
              }
-             h2::before { 
-                 
-              content: "\201C";
-              font-weight: bold;
-              font-size:50px;
-              position: absolute; 
-              top: -40px;
-              left: -30px; 
-              color: var(--aqua);
-              @media all and (max-width: 700px) {
-                  font-size:35px;
-                  top: -30px;
-                  left: -20px; 
-              } 
-              
-          } 
-         h2::after { 
-              content: "\201E";
-              font-weight: bold;
-              font-size:50px;
-              position: absolute; 
-              bottom: -30px;
-              right: -20px; 
-              color: var(--aqua);   
-              @media all and (max-width: 700px) {
-                  font-size:35px;
-                  bottom: -20px;
-                  right: -10px; 
-              }      
-          }
-          h3 {
-              margin-top: 33px;
-              text-align: right;
-              margin-right: 30px;
-              text-transform: capitalize;
-              @media all and (max-width: 700px) {
-                  font-size:18px;
-              } 
-          }
+
              
          }
       }
@@ -131,13 +90,33 @@
      box-shadow: none !important;
   }
 
-
+// .pagi-container {
+//   //display: flex;
+//   .swiper-pagination {
+//     @media all and (max-width: 700px) {
+//         display: block;
+//     }
+//     //display: none;
+//     width: 127px !important;
+//     background: red;
+//     margin: 50px auto 0 auto;
+//   }
+// }
 .swiper-pagination {
-  @media all and (max-width: 700px) {
-      display: block;
+  //margin-top: 40px !important;
+}
+.writing-container-swiper {
+    line-height: 1.4;
+ // background-color: red;
+  p:nth-child(1) {
+    
+       margin-bottom: 10px;
+       margin-top: 10px;
+       font-weight: 700;
+       font-size: 18px;
   }
-  //display: none;
-  width: 127px !important;
-  //background: red;
-  margin: 20px auto 0 auto;
+  p:nth-child(2) {
+   
+  font-size: 15px;
+}
 }

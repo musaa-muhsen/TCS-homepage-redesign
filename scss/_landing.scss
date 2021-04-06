@@ -1,18 +1,38 @@
+@import "_var";
 .hero-container {
+    overflow-x: hidden;
     background-image: url("/images/image-landscape.jpg");
     background-color: #cccccc;
-    height: 500px;
+    height: 25vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     width: 1000px;
-    margin: 50px auto 50px auto;
+    @media all and (max-width: 1000px) {
+        width: 100%; 
+    }
+    
+    @include mobile {
+        
+        height: 40vh;
+    }
+    margin: 70px auto 70px auto;
     position: relative;
+
     div {
        position: absolute;
        bottom: 10%;
-       left: 10%;
+       left: 5%;
+    }
+    p {
+        color: #fff;
+        font-size: 20px;
+    }
+    h1 {
+        margin: 5px 0 30px 0;
+        color: #fff;
+        font-weight: 400;
     }
     button {
             cursor: pointer;
@@ -20,9 +40,14 @@
             border: 0;
             font-weight: 400;
             padding: 10px 20px;
-            background: #262626;
-            color: #fff;
-            font-size: 15px;;
+            background:#fff;
+            color: var(--offBlack);
+            font-size: 15px;
+            transition: all 0.3s;
+            &:hover {
+                background:var(--tscBlue);
+                color: #fff;
+            }
         
     }
 }
@@ -36,6 +61,8 @@
 }
 
 .landing-block-1 {
+    //outline: red solid 1px;
+
     h1 {
 font-size: 48px;
 font-weight: 600;
@@ -46,8 +73,8 @@ font-weight: 600;
     padding: 50px 0;
     margin: 0 auto;
     width: 1000px;
-    @media all and (max-width: 1001px) {
-       width: 99%;
+    @media all and (max-width: 1100px) {
+       width: 90%;
     }
     ul {
         margin-top: 20px;
@@ -78,6 +105,7 @@ font-weight: 600;
                 width:100%;
                 height:5px;
                 background-color: #e5ecf4;
+                //background-color:#bedfff;
                 transition: background-color 0.3s ease-in-out;
                 bottom:-5px;
                 left:0;
@@ -96,4 +124,96 @@ font-weight: 600;
 
 .landing-block-1 ul li:hover ::after  {
     background-color: #0e8ff9;
+}
+
+.overlay-links {
+    color: var(--white);
+    display: none;
+    position: fixed;
+    z-index: 20000;
+    background-color: var(--greyDark);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        p {
+            position: absolute;
+            top: 0;
+            right: 30px;
+            font-size: 100px;
+            cursor: pointer;
+            &:hover {
+                color: var(--tscBlue); 
+            }
+
+        }
+        article {
+            margin: auto;
+            width: 500px;
+            @include mobile {
+                padding-top: 50px ; 
+             }
+            div {
+                @include mobile {
+                   padding-left: 20px ; 
+                }
+                display: flex;
+                flex-direction: column;
+                //outline: red solid 1px;
+                h3 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    color: var(--tscBlue);
+                }
+                ul {
+                    li {
+                        color: var(--white);
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 25px;
+                        &:hover {
+                            color: var(--tscBlue); 
+                        }
+
+                    }
+                }
+                
+              
+            }
+           
+
+
+        }
+    }
+}
+
+.contact-us-btn-mobile {
+    display: none;
+    margin-left: 40px;
+    background: var(--black-3);
+    padding: 0 20px;
+    text-align: center;
+    color:var(--white);
+    border: var(--white) solid 1px; 
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+
+// background: rgba(#232323, 0.8);
+background-color: var(--white); 
+color:var(--black-3);
+    }
 }

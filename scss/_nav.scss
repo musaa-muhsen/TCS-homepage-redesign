@@ -1,14 +1,17 @@
 @import "_var";
 nav.nav-wrapper {
     overflow-x: hidden;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: var(--black-3);
     .nav-container-main {
         display: grid;
         grid-template-columns: auto 1fr auto;
         margin: 0 auto;
         width: 100%;
-        max-width: 1500px;
+        max-width: 1400px;
+        @media all and (max-width:1400px) {
+            width: 95%;
+        }
         .logo-container {
             display: flex;
             img {
@@ -16,7 +19,7 @@ nav.nav-wrapper {
                 margin: auto;
                 //outline: blanchedalmond solid 1px;
                 width: 150px;
-                height: 45.31px;
+                
             }
             
         }
@@ -25,15 +28,15 @@ nav.nav-wrapper {
         }
         .links-container-nav {
             display: flex;
+            align-items: center;
  
          }
-        @media all and (max-width:1500px) {
-           
-        }
+      
        
     }
 }
 .contact-us-btn {
+    display: block;
     margin-left: 40px;
     background: var(--black-3);
     padding: 0 20px;
@@ -112,7 +115,7 @@ color:var(--black-3);
 // }
 
 .search__container {
-margin-bottom: 15px;
+//margin-bottom: 15px;
     }
 
 
@@ -128,15 +131,17 @@ margin-bottom: 15px;
         line-height: 18px;
         color:  var(--white);
         background-color: transparent; 
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='#fff'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.6351 22.771L17.7187 16.5827C19.2399 14.7641 20.0734 12.4759 20.0734 10.0937C20.0734 4.52814 15.5708 0 10.0367 0C4.50255 0 0 4.52814 0 10.0937C0 15.6593 4.50255 20.1875 10.0367 20.1875C12.1143 20.1875 14.0941 19.5573 15.7868 18.361L21.7482 24.5963C21.9974 24.8565 22.3325 25 22.6916 25C23.0316 25 23.3541 24.8697 23.5989 24.6327C24.119 24.1293 24.1356 23.2946 23.6351 22.771ZM10.0367 2.63315C14.1273 2.63315 17.4551 5.97988 17.4551 10.0937C17.4551 14.2076 14.1273 17.5543 10.0367 17.5543C5.94608 17.5543 2.61827 14.2076 2.61827 10.0937C2.61827 5.97988 5.94608 2.63315 10.0367 2.63315Z' fill='white'/%3E%3C/svg%3E%0A");        background-repeat: no-repeat;
         background-size: 18px 18px;
-        background-position: 95% center;
+        background-position: 90% center;
         //border-radius: 50px;
         border: 1px solid var(--white);
         transition: all 250ms ease-in-out;
         backface-visibility: hidden;
         transform-style: preserve-3d;
+        @media all and (max-width: 1000px) {
+            width: 140px;
+        }
     }
 
 .search__input::placeholder {

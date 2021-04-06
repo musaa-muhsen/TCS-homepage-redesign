@@ -38,7 +38,7 @@
     h1 {
         font-size: 16px*3;
         font-weight: 600;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         @media only screen and (max-width: 1000px) {
             font-size: 30px;
            }
@@ -47,10 +47,11 @@
 
 
 .block-2-whole-wrapper {
+    
     width: 100%;
     //background-color: cadetblue;
     margin-top: 30px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     @include mobile {
         margin-bottom: 100px; 
     }
@@ -82,6 +83,7 @@
                 display: block;
                
                 .link-title-container {
+                    
                     padding: 20px 0;
                     width: 250px;
                     padding-left: 20px;
@@ -98,7 +100,7 @@
                     
                     p:nth-child(1) {
                         
-                        line-height: 1.3;
+                        line-height: 1.4;
                         font-weight: 600;
                         text-align: left;
                            
@@ -155,7 +157,7 @@ a.card-block-2:hover img {
 
 
 .block-3-whole-wrapper {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     column-gap: 6%;
@@ -191,6 +193,7 @@ a.card-block-2:hover img {
              p {
                  margin-bottom: 10px;
                  text-transform: capitalize;
+                 line-height: 1.4;
              }
              h2 {
                  font-weight: 600;
@@ -251,6 +254,7 @@ a.card-block-2:hover img {
 
 
 .block-4-whole-wrapper {
+    
       
     margin-top: 30px;
     margin-bottom: 100px;
@@ -314,8 +318,8 @@ a.card-block-2:hover img {
             .link-title-container {
                 transition: all 0.3s ease-in-out;   
                 .link-title-main {
-                    //outline: red solid 1px;
-                    line-height: 1.3;
+                   
+                    line-height: 1.4;
                    // outline: red solid 1px;
                     padding-left: 20px;
                     font-weight: 600;      
