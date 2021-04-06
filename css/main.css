@@ -690,7 +690,7 @@ nav.nav-wrapper .nav-container-main .links-container-nav {
 .hero-container {
   overflow-x: hidden;
   background-image: url("../images/annie-spratt-kZO9xqmO_TA-unsplash.jpg");
-  background-color: #0e8ff9;
+  background-color: var(--black-3);
   height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
