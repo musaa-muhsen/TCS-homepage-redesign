@@ -1,9 +1,9 @@
 @import "_var";
 .hero-container {
     overflow-x: hidden;
-    background-image: url("/images/annie-spratt-kZO9xqmO_TA-unsplash.jpg");
-    background-color: #cccccc;
-    height: 25vh;
+    background-image: url("../images/annie-spratt-kZO9xqmO_TA-unsplash.jpg");
+    background-color:#0e8ff9;
+    height: 30vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +16,8 @@
     @include mobile {
         
         height: 40vh;
+        margin: 0 auto 70px auto;
+
     }
     margin: 70px auto 70px auto;
     position: relative;
