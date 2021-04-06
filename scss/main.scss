@@ -33,6 +33,36 @@ img {
     height: auto;
 }
 
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active  { 
+       outline: none !important;  
+    }
+     
+
 @import "_structure";
 @import "_nav";
 @import "_landing";

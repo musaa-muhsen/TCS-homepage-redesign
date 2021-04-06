@@ -3,8 +3,10 @@
 footer {
     //background: #f2f2f2;
    background: var(--grey-4);
+ 
     width: 100%;
     .footer-wrapper-desktop {
+        max-width: 1400px;
         display: block;
         @media all and (max-width: 1000px) {
             display: none;
@@ -90,4 +92,67 @@ fill: rgba( #000000,0.7);
     margin-top: 0 !important;
 }
 
+
+.footer-signature {
+    p { 
+        
+        font-size: 13px;
+        margin: 0 auto;
+        max-width: 1400px;
+        width: 80%;
+        @media all and (max-width: 1000px) {
+            text-align: center;
+            width: 75%;
+        }
+    }
+    padding: 20px 0;
+}
+
+.mobile-footer-connect-with-us {
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    width: 90%;
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .mobile-links-container {
+        margin: 20px 0;
+        display: flex;
+        ul {
+            margin: auto;
+            display: flex;
+            li:nth-child(2) {
+                margin-left:10px;
+             }
+            li:nth-child(2), li:nth-child(3) {
+               margin-right:10px;
+            }
+        }
+    }
+
+    .links-2-footer {
+        margin: 0 auto;
+        display: flex;
+        font-size: 12px;
+        font-weight: 200;
+        flex-wrap: wrap;
+        max-width: 500px;
+        justify-content: center;
+        li:nth-child(2) {
+            margin-left:10px;
+         }
+        li:nth-child(2), li:nth-child(3), li:nth-child(4){
+           margin-right:10px;
+        }
+    }
+  
+    @media all and (max-width: 1000px) {
+        display: block;
+       
+    }
+
+}
 //3 glass select2 egg 2 water , 2 big spoon flour, 2 big 

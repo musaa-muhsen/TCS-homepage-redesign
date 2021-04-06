@@ -9,7 +9,7 @@ nav.nav-wrapper {
         margin: 0 auto;
         width: 100%;
         max-width: 1400px;
-        @media all and (max-width:1400px) {
+        @media all and (max-width:1450px) {
             width: 95%;
         }
         .logo-container {
@@ -36,6 +36,9 @@ nav.nav-wrapper {
     }
 }
 .contact-us-btn {
+    @media all and (max-width: 600px) {
+        display: none;
+    }
     display: block;
     margin-left: 40px;
     background: var(--black-3);
@@ -162,3 +165,38 @@ color:var(--black-3);
 
 
 
+// ================== button 2 ================== 
+
+.mobile-contact-us-container {
+    margin-top: 20px;
+    display: none;
+width: 140px;
+@media all and (max-width: 600px) {
+    display: block;
+}
+.contact-us-btn2 {
+    display: block;
+    //margin-left: 40px;
+   position: relative;
+   left: -1px;
+    padding: 0 20px;
+    text-align: center;
+ border: var(--black-3) solid 1px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    background-color: var(--grey-4); 
+color:var(--black-3);
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+
+// background: rgba(#232323, 0.8);
+background: var(--black-3);
+color:var(--grey-4);
+border: var(--grey-4) solid 1px; 
+    }
+}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "tsc-main-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musaa-muhsen/TCS-homepage-redesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musaa-muhsen/TCS-homepage-redesign/issues"
+  },
+  "homepage": "https://github.com/musaa-muhsen/TCS-homepage-redesign#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
